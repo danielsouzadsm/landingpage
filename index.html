@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./assets/css/tags.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <input type="checkbox" class="fechar-menu" name="fechar-menu" id="fechar-menu" aria-label="fechar menu" role="button">
+    <label class="fechar-menu-label" for="fechar-menu" title="fechar menu"></label>
+    <aside class="menu white-bg">
+        <div class="principal-conteudo menu-conteudo">
+            <h1 onclick="getElementById('fechar-menu').checked=false">
+                <a href="#home">LOGO</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('fechar-menu').checked=false">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#top3">Top 3</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#princing">Princing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-padding"></div>
+    <section id="home" class=" principal-fundo section">
+        <div class="principal-conteudo intro-conteudo">
+            <div class="intro-text-conteudo">        
+                <h2 >
+                    January brings us firefox 85
+                </h2>
+                <p>joão recebeu um texto de instrução para montar um brinquedo: bracelete de super herói. mas, a pessoa que escreveu, esqueceu de fazer a lista dos materiais. você consegue ajudá-lo a fazer a lista dos materiais que precisam ser separados para montar esse brinquedo?</p>
+            </div>
+            <div class="intro-img">
+               <img src="./assets/img/javascript.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="intro" class=" white-bg section">
+        <div class="principal-conteudo top3-conteudo">
+            <h2>Top 3 jobs</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine's performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+            <p>We'll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            <p>We'll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We'll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+        </div>
+    </section>
+    <section id="top3" class="grid-one principal-fundo section ">
+        <div class="grid-one-conteudo principal-conteudo">
+            <h2 class="reajuste-grid">Top 3 Jobs</h2>
+            <p class="ajuste">Here are soome recent work.</p>
+            <div class="grid">
+                <article>
+                    <h3>test 1</h3>
+                    <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine's performance.</p>
+                </article>
+                <article>
+                    <h3>test 2</h3>
+                    <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine's performance.</p>
+                </article>
+                <article>
+                    <h3>test 3</h3>
+                    <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine's performance.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="principal-conteudo grid-one-conteudo">
+            <h2 class="reajuste-grid">Gallery</h2>
+            <p class="ajuste">Here are some of my pics</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=1" alt="imagem aleatoria por picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=2" alt="imagem aleatoria por picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=3" alt="imagem aleatoria por picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=4" alt="imagem aleatoria por picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=5" alt="imagem aleatoria por picsum">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=6" alt="imagem aleatoria por picsum">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="princing" class=" white-bg section">
+        <div class="principal-conteudo top3-conteudo">
+            <h2>Princing</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine's performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+            <p>We'll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            <div class="resposivo-tabela">
+                <table>
+                    <caption>Princing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="3">footer</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class=" principal-fundo section">
+        <div class="principal-conteudo intro-conteudo">
+            <div class="intro-text-conteudo">        
+                <h2 >
+                    Contact
+                </h2>
+                <p>joão recebeu um texto de instrução para montar um brinquedo: bracelete de super herói. mas, a pessoa que escreveu, esqueceu de fazer a lista dos materiais. você consegue ajudá-lo a fazer a lista dos materiais que precisam ser separados para montar esse brinquedo?</p>
+            </div>
+            <div class="intro-img">
+               <img src="./assets/img/javascript.svg" alt="">
+            </div>
+            <div class="contact-form">
+               <fieldset class="form-grid"> 
+                <legend>Contact me</legend>
+                <div class="form-group">
+                    <label for="first-name">Primeiro name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                </div>
+                <div  class="form-group">
+                    <label for="last-name"> Último nome</label>
+                    <input type="text" name="last-name" id="last-name"
+                    placeholder=" Seu último nome">
+                </div>
+                <div  class="form-group">
+                    <label for="email"> Ultimo nome</label>
+                    <input type="email" nome="email" id="email" placeholder="Seu email">
+                </div>
+                <div  class="form-group completar">
+                    <label for="message"> </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Seu mensagem"></textarea>
+                </div>
+                <div  class="form-group ">
+                    <button type="submit">Mandar mensagem</button>
+                </div>
+               </fieldset>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p><a target="_blank" href="https://danielsouzadsm.github.io/Projeto/">Feito com <span class="coracao">♥</span> Por Daniel Souza</a></p>
+    </footer>
+    <a class="voltar" href="#home">➤</a>
+</body>
+</html>

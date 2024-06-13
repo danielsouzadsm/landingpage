@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --primary-color:#0a1128;
+    --white-color:#ffffff;
+    --gap:5rem;
+    --gray:#eeeeee;
+    --secundary:#dc143c;
+}
+.principal-fundo{
+    background-image: url(../img/fundo.svg);
+    background-position: center center;
+    background-size: cover;
+    color: var(--white-color);
+}
+.white-bg{
+    background-color: var(--white-color);
+    color: var(--primary-color)
+}
+.principal-conteudo{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+}
+.section{
+    min-height: 100vh;
+}
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+.menu h1 a{
+    color:inherit;
+    position: relative;
+}
+.menu{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--gray);
+}
+.menu h1 a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -20%;
+    height: 0.25rem;
+    width: 0;
+    background-color: var(--secundary);
+    transition: all .3s ease-in-out;
+}
+.menu h1 a:hover::after {
+    width: 70%;
+    left: 15%;
+}
+.menu-conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+nav ul li{
+    padding: 0.1px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a{
+    display: block;
+    padding: 1.7rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    height: 0.2rem;
+    width: 0;
+    left: 0;
+    background-color: var(--secundary);
+    transition: all 300ms ease;
+}
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+.intro-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+   min-height: 100vh;
+}
+.intro-text-conteudo .intro-img{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.intro-img img{
+    max-width: 100%;
+    height: 80vh;
+}
+.top3-conteudo{
+    max-width: 80rem;
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.grid-one-conteudo{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.reajuste-grid{
+    margin-bottom: 1rem;
+}
+.ajuste{
+    padding-bottom: 10rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: var(--gap );
+    counter-reset: gridcoutner;
+}
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    text-align: center;
+
+}
+.grid h3::before{
+    counter-increment:gridcoutner;
+    content: counter(gridcoutner);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3.9rem;
+    left:2rem;
+    transform: rotate(5deg);
+}
+.gallery-img{
+    width: 100%;
+    max-width: 35rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+.gallery-img img {
+    transition: all 30ms ease-in-out;
+}
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+.contact-form{
+    grid-column: span 2;
+    margin-top: -14rem;
+}
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+.form-group{
+    flex:  1 1 320px
+}
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.form-group input , 
+.form-group textarea{
+    border: none;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+.form-group input:focus , .form-group textarea:focus{
+    box-shadow: 0 0 15px 5px var(--white-color);
+}
+.form-group::placeholder{
+    color: var(--gray);
+}
+body .completar{
+    width: 100%;
+    flex: 1 1 100%;
+}
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.3rem 1.9rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.form-group button:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.rodape{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+.coracao{
+    color: var(--secundary);
+}
+.rodape a{
+    color: var(--primary-color);
+}
+.fechar-menu{
+    display: none;
+}
+.voltar{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--white-color);
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-91deg);
+    border: 0.2rem solid var(--gray);
+}
+@media(max-width: 750px){
+    .intro-conteudo, .grid{
+        grid-template-columns: 1fr;
+    }
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .gallery-img img{
+        width: 70%;
+    }
+}
+@media (min-width:750px) and ( max-width:1050px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:636px) {
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-conteudo, .menu-conteudo ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-conteudo{
+        height: 100vh;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .fechar-menu-label::after{
+        content:'☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        text-align: center;
+        width: 3rem;
+        padding: 0.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 0.1rem solid var(--gray);
+    }
+    .fechar-menu:checked~.menu{
+        display: block;
+    }
+    .fechar-menu:checked~.fechar-menu-label::after{
+        display: block;
+        content:'✕';
+    }
+}
+@media(max-width: 460px){
+    
+    h2{
+        font-size: 5rem;
+    }
+}

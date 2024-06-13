@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 6.5rem;
+    margin-bottom:  5rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+p{
+    margin-bottom: 3rem;
+}
+table caption{
+    text-align: left;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    font-style: italic;
+
+}
+.resposivo-tabela{
+    overflow: hidden;
+    overflow-x: auto;
+}
+table{
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td{
+    white-space: nowrap;
+    border: 0.1rem solid var(--gray);
+    padding: 1.0rem;
+    font-size: 1.8rem;
+}
+tfoot td, table th{
+    background-color: var(--gray);
+}
